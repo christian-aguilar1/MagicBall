@@ -33,7 +33,7 @@
         android:layout_height="160dp"
         android:layout_gravity="center"
         android:layout_margin="40dp"
-        android:src="@drawable/magicBall"
+        android:src="@drawable/magicball"
         android:contentDescription="@string/todo" />
 
     <TextView
