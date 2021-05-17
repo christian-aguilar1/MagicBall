@@ -9,6 +9,9 @@
     tools:context=".MainActivity">
 
     <!-- Toolbar red and title -->
+    <!-- Le agregue una nueva barra superior de la aplicacion
+         con un titulo, para eso tuve que desactivar el toolbar
+         que viene por defecto en manifests/AndroidManifest.xml -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -62,6 +65,9 @@
         android:textSize="14sp" />
 
     <!-- button with image -->
+    <!-- El boton con imagen tiene un background creado en
+         res/drawable/rounded_borders.xml para darle un
+         fondo gris a la imagen y bordes redondeados-->
     <ImageButton
         android:id="@+id/btnBall"
         android:layout_width="match_parent"
