@@ -1,3 +1,3 @@
 # MagicBall
 
-Aplicación simpre creada con Android Studio
+Aplicación simple creada con Android Studio
