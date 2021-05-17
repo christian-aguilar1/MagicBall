@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">MagicBall</string>
-    <string name="conoce_tu_futuro">Conoce tu futuro</string>
-    <string name="escribe_tu_mensaje">Escribe tu mensaje</string>
-    <string name="todo">TODO</string>
-    <string name="strr">…</string>
+    <string name="header">Conoce tu futuro</string>
+    <string name="titulo">Escribe una pregunta que te gustaría que adivinara: </string>
+    <string name="mensaje">Escribe tu mensaje</string>
+    <string name="advice">Presiona la imagen de la bola para saber la respuesta</string>
+    <string name="imageball">MagicBall</string>
+    <string name="text_respuesta">Mi respuesta es:</string>
+    <string name="respuesta">...</string>
 </resources>

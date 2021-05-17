@@ -4,47 +4,97 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FAF6F6"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <!-- Toolbar red and title -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A61515"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="@string/header"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <!-- first text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/titulo"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <!-- input text -->
+    <EditText
+        android:id="@+id/question"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        android:hint="@string/mensaje"
+        android:importantForAutofill="no"
+        android:inputType="textShortMessage"
+        android:textColor="#000000"
+        android:textColorHighlight="#D32525"
+        android:textColorHint="#8A8181"
+        android:textColorLink="#FF0000"
+        android:textSize="24sp" />
+
+    <!-- advice text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:text="@string/advice"
+        android:textColor="#4A000000"
+        android:textSize="14sp" />
+
+    <!-- button with image -->
+    <ImageButton
+        android:id="@+id/btnBall"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_borders"
+        android:contentDescription="@string/imageball"
+        android:focusableInTouchMode="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/magic_ball" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/conoce_tu_futuro"
-        android:textColor="#E60000"
-        android:textSize="24sp"
-        android:textStyle="bold|italic"
-        android:layout_margin="40dp" />
-    
-    <EditText
-        android:id="@+id/question"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textSize="24sp"
-        android:hint="@string/escribe_tu_mensaje"
-        android:inputType="textShortMessage"
-        android:autofillHints="@string/escribe_tu_mensaje" />
-
-    <ImageButton
-        android:id="@+id/btnBall"
-        android:layout_width="303dp"
-        android:layout_height="160dp"
-        android:layout_gravity="center"
-        android:layout_margin="40dp"
-        android:src="@drawable/magicball"
-        android:contentDescription="@string/todo" />
+        android:layout_gravity="start"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/text_respuesta"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/respuestavista"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        android:textColor="#33F3FF"
-        android:text="..."
-        android:layout_margin="60dp"/>
+        android:layout_gravity="start"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/respuesta"
+        android:textColor="#FF0000"
+        android:textSize="26sp" />
 
 </LinearLayout>
